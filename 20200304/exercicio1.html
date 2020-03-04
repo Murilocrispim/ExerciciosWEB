@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Exercicio 1</title>
+        <script>
+            function validaform(nome, email, sexo, datanasc){
+                    var mensagemerro = '';
+                    var nome = document.getElementById('nome').value;
+                    var email = document.getElementById('email').value;
+                    var sexo = document.getElementById('sexo').value;
+                    var datanasc = document.getElementById('datanasc').value;
+                if((nome != "") && (email != "") && (sexo != "") && (datanasc != "")){
+                        mensagem = "Nome:'"+nome+"' \n Email:'"+email+"' \n Sexo:'"+sexo+"' \n Data nascimento:'"+datanasc+"' ";
+                        alert(mensagem);
+                        
+                }else{
+                    if(nome == ''){
+                        mensagemnome = "falta o nome \n";
+                        mensagemerro += mensagemnome;
+                    }
+                    if(email == ''){
+                        mensagememail = "falta o email \n";
+                        mensagemerro += mensagememail;
+                    }
+                    if(sexo == ''){
+                        mensagemsexo = "falta o sexo\n";
+                        mensagemerro += mensagemsexo;
+                    }
+                    if(datanasc == ''){
+                        mensagemdata = "falta a data de nascimento\n";
+                        mensagemerro += mensagemdata;
+                    }
+
+                    alert(mensagemerro);
+                }  
+               /* mensagem = "Você escreveu '"+valor+"' a";
+                alert(mensagem);
+                if(isNaN(valor)){
+                    alert(valor +" é um número");
+                }
+                else{
+                    alert(valor +" é um numero");
+                }*/
+            }
+    </script>
+    </head>
+    <body>
+        <form name="form">
+            nome: <input type="text" name="nome" id="nome" /> <br />
+            email: <input type="text" name="email" id="email" /> <br />
+            sexo: <input type="text" name="sexo" id="sexo"/> <br />
+            data <input type="date" name="datanasc" id="datanasc"/>
+
+            <input type="button" value="exibir" onclick="validaform()"/>
+        </form>
+    </body>
+</html>
