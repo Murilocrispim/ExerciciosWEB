@@ -8,6 +8,6 @@
         <h1>Aqui estarão os links dos meus exercicios</h1>
 
         <a href="20200219/Barbearia/">Barbearia</a>
-        <a href="20200304/exercicio1/">Exercicio1</a>
+        <a href="20200304/exercicio1.html/">Exercicio1</a>
     </body>
 </html>
