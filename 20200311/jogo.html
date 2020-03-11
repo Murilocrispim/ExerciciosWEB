@@ -4,7 +4,6 @@
         <meta charset="utf-8" />
         <title>jogo da velha</title>
         <script>
-                var jogo[3][3];
                 var cont = 0;
                 function valida_jogada(valor){
                   
@@ -12,7 +11,8 @@
                     if(valor.value!=''){
                             cont++;
                             if(cont%2==0){
-                                
+                                if(valor.value == "0"){
+                                    
                                 }else{
                                     alert('Vez do outro jogador');
                                     valor.value='';
