@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>jogo da velha</title>
+        <script>
+                var jogo[3][3];
+                var cont = 0;
+                function valida_jogada(valor){
+                  
+                    alert( valor.name[0]);
+                    if(valor.value!=''){
+                            cont++;
+                            if(cont%2==0){
+                                
+                                }else{
+                                    alert('Vez do outro jogador');
+                                    valor.value='';
+                                    cont--;
+                                }
+                            }else{
+                                if(valor.value == "x"){
+
+                                }else{
+                                    alert('Vez do outro jogador');
+                                    valor.value='';
+                                    cont--;
+                                }
+                            }
+                    }else{
+
+                    }
+                }
+                function jogo(valor){
+
+                }
+        </script>
+    </head>
+    <body>
+        <table border='1'>
+                <tr>
+                    <td><input type="text" name="0" onblur="valida_jogada(this)" onchange="jogo(this)"/></td>
+                    <td><input type="text" name="1" onblur="valida_jogada(this)" onchange="jogo(this)"/></td>
+                    <td><input type="text" name="2" onblur="valida_jogada(this)" onchange="jogo(this)"/></td>
+                </tr>
+                <tr>
+                    <td><input type="text" name="3" onblur="valida_jogada(this)" onchange="jogo(this)"/></td>
+                    <td><input type="text" name="4" onblur="valida_jogada(this)" onchange="jogo(this)"/></td>
+                    <td><input type="text" name="5" onblur="valida_jogada(this)" onchange="jogo(this)"/></td>
+                </tr>
+                <tr>
+                    <td><input type="text" name="6" onblur="valida_jogada(this)" onchange="jogo(this)"/></td>
+                    <td><input type="text" name="7" onblur="valida_jogada(this)" onchange="jogo(this)"/></td>
+                    <td><input type="text" name="8" onblur="valida_jogada(this)" onchange="jogo(this)"/></td>
+                </tr>
+        </table>
+    </body>
+</html>
